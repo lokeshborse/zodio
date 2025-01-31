@@ -1,0 +1,2402 @@
+/*------------------------------------------------------------------
+Project: Plumbing
+Author: The_Krishna
+Last change: 16/01/2025
+Primary use:
+------------------------------------------------------------------ */
+/*-----------------------[Table of contents]------------------------
+1.Default CSS
+2.Preloader CSS
+3.Whole Site Image Animtion CSS
+4.Whole Page scroll Aniamtion CSS
+5.Header CSS
+6.Section One CSS
+7.Section Two CSS
+8.Section Three CSS
+9.Section Four CSS
+10.Section Five CSS
+11.Section Six CSS
+12.Section Seven CSS
+13.Section Eight CSS
+14.Section Nine CSS
+15.Section Ten CSS
+16.Footer Section CSS 
+17.Bottom top button CSS
+18.About Page CSS
+19.Team Page CSS
+20.Pricing Page CSS
+21.Get Quote Page CSS
+22.Client Page CSS
+23.FAQ Page CSS
+24.Error Page CSS
+25.Coming Soon Page CSS
+26.Services Page CSS
+27.Project Page 2 CSS
+28.Project Page 3 CSS
+29.Single Project Page CSS
+30.Blog Page CSS
+31.Single Blog Page CSS
+32.Contact Page CSS
+------------------------------------------------------------------ */
+/*-----------------------[ 1.Default CSS ]------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+dl,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-corner {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF2424;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #171819;
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.site_lr-spacer {
+    padding: 0 12px;
+}
+
+/*-----------------------[ 2.Preloader One CSS ]------------------------*/
+.page-loader {
+    max-width: 600px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 10000;
+    overflow: hidden;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 12px;
+    background: #FFFFFF;
+}
+
+.splash-logo-box img {
+    max-width: 100%;
+    animation-name: hanging;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    transform-origin: center top;
+}
+
+@keyframes hanging {
+    0% {
+        transform: rotate(7deg);
+    }
+
+    100% {
+        transform: rotate(-7deg);
+    }
+}
+
+.logo-text {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--2, #000);
+    font-family: "League Spartan";
+    text-transform: uppercase;
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.logo-sub-text {
+    color: var(--2, #000);
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.splash-logo-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.splash-img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.splash-img2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+/*-----------------------[ 2.Preloader Two CSS ]------------------------*/
+div#page-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blob {
+    width: 100px;
+    display: grid;
+    background: #fff;
+}
+
+.blob:before,
+.blob:after {
+    content: "";
+    grid-area: 1/1;
+    width: 45px;
+    height: 45px;
+    background: #FE6601;
+    animation: blob-rhf26m 2s infinite;
+}
+
+.blob:after {
+    animation-delay: -1s;
+}
+
+@keyframes blob-rhf26m {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(100%, 0);
+    }
+
+    50% {
+        transform: translate(100%, 100%);
+    }
+
+    75% {
+        transform: translate(0, 100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+/*-----------------------[ 3.Onboarding Screen CSS ]------------------------*/
+.slide1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(../images/splash-screen/onbording-img1.jpg);
+}
+
+.slide2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(../images/splash-screen/onbording-img2.jpg);
+}
+
+.slide3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(../images/splash-screen/onbording-img3.jpg);
+}
+
+.Onboarding-main {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.boarding-title h2 {
+    color: #FFFFFF;
+    font-family: "League Spartan";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.boarding-title p {
+    color: #FFFFFF;
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-top: 13px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border-top: 0;
+    border-bottom: 0;
+    background: rgba(255, 255, 255, 0.24);
+}
+
+.carousel-indicators .active {
+    width: 28px !important;
+    height: 9px !important;
+    border-radius: 5px;
+    background: #FFF;
+}
+
+.Onboarding-Screen-1-full {
+    position: absolute;
+    bottom: 130px;
+    left: 0;
+    padding: 0 12px;
+}
+
+img.shape-spalsh-btn {
+    position: absolute;
+    right: -12px;
+}
+
+.onboarding-next-btn {
+    width: 48px;
+    height: 48px;
+    background: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 37px;
+    bottom: -84px;
+    cursor: pointer;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 47px;
+    left: -47px;
+    right: auto;
+    z-index: 2;
+}
+
+.skip_btn-onboading {
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 4px;
+}
+
+.skip_btn-onboading a {
+    color: var(--1, #FFF);
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+/*-----------------------[ 4.Lets Screen CSS ]------------------------*/
+.lets-sec {
+    margin-bottom: 60px;
+}
+
+.lets-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/lets-you-screen/bg-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-header {
+    padding-top: 20px;
+}
+
+.lets-u-text {
+    padding: 50px 0;
+    color: var(--1, #FFF);
+    font-family: "League Spartan";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.media-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.let-media-icons {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.or-section p {
+    overflow: hidden;
+    color: var(--3, #555);
+    text-align: center;
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 32px 0;
+}
+
+.or-section p:before {
+    right: 8px;
+    margin-left: -50%;
+}
+
+.or-section p:after {
+    left: 8px;
+    margin-right: -50%;
+}
+
+.or-section p:before,
+.or-section p:after {
+    background: #F5F5F5;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.button-main a {
+    border-radius: 8px;
+    background: var(--4, #FE6601);
+    padding: 12px;
+    color: var(--1, #FFF);
+    text-align: center;
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    display: block;
+}
+
+.sing-in-up {
+    color: var(--3, #555);
+    text-align: center;
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background: white;
+    padding: 16px 0;
+    z-index: 99;
+}
+
+.sing-in-up a {
+    color: #000;
+    font-weight: 600;
+}
+
+/*-----------------------[ 5.Sign In Screen CSS ]------------------------*/
+.email-pass-main {
+    display: flex;
+    align-items: center;
+    background: #F5F5F5;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.email-pass-main input {
+    border: none;
+    outline: none;
+    background: #F5F5F5;
+    width: 100%;
+    padding-left: 12px;
+    color: #555555;
+    font-family: League Spartan;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+#email-pass-main {
+    margin-top: 32px;
+    margin-bottom: 16px
+}
+
+.remember-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.footer-checkbox-input+.footer-chec-txt {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+
+.footer-checkbox-input {
+    position: absolute;
+    opacity: 0;
+}
+
+.footer-checkbox-input:checked+.footer-chec-txt:before {
+    background: #FE6601;
+    border: none;
+}
+
+.footer-checkbox-input+.footer-chec-txt:before {
+    content: "";
+    display: inline-block;
+    vertical-align: text-top;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.footer-checkbox-input:checked+.footer-chec-txt:after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 11px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+}
+
+.footer-chec-txt {
+    color: #707070;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.forget-btn a {
+    color: #000;
+    text-align: right;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.email-pass-main-sub {
+    margin-top: 16px;
+}
+
+.signupBtn {
+    margin-top: 24px;
+}
+
+.iti-flag {
+    position: relative;
+}
+
+.intl-tel-input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.intl-tel-input.separate-dial-code .selected-dial-code {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 28px;
+    display: none;
+}
+
+.intl-tel-input .selected-flag .iti-arrow::after {
+    content: url(../images/svg/down-blck-arrow.svg);
+    position: absolute;
+    top: -10px;
+    right: 7px;
+}
+
+.intl-tel-input .selected-flag .iti-arrow {
+    border: none;
+}
+
+.intl-tel-input .selected-flag {
+    padding: 0;
+}
+
+.intl-tel-input.separate-dial-code .selected-flag {
+    background: transparent;
+}
+
+
+/*-----------------------[ 6.Verify Number CSS ]------------------------*/
+.section-main-ver {
+    padding: 0 12px;
+    margin-bottom: 120px;
+}
+
+#top-header,
+#top-navbar {
+    background: #FFFFFF;
+    max-width: 600px;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 200;
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    top: 0%;
+    -webkit-box-shadow: 0 0 22px -4px rgb(0 0 0 / 17%);
+    box-shadow: 0 0 22px -4px rgb(0 0 0 / 17%);
+    -webkit-animation: fixedheader 600ms ease 0ms 1 forwards;
+    animation: fixedheader 600ms ease 0ms 1 forwards;
+}
+
+@keyframes fixedheader {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.top-navbar2 {
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.top-header-full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 0;
+}
+
+.header-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-title h1 {
+    color: var(--2, #000);
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+header#top-navbar {
+    padding: 0 12px 0 12px;
+}
+
+.img1-main {
+    text-align: center;
+    margin: 24px 0;
+}
+
+.img1-main img {
+    max-width: 100%;
+}
+
+.veri-text {
+    color: var(--3, #555);
+    text-align: center;
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.otp-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 24px 0 40px 0;
+}
+
+.otp-field input {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    border: transparent;
+    background: #F5F5F5;
+    outline: none;
+    transition: all 0.1s;
+    font-family: Jost;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #000;
+}
+
+.otp-field input:focus {
+    border: 2px solid #FE6601;
+    background: transparent;
+}
+
+.otp-field input.filled {
+    border: 2px solid #000;
+    background: transparent;
+}
+
+.no-spinners::-webkit-outer-spin-button,
+.no-spinners::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.not-yet {
+    color: var(--3, #555);
+    text-align: center;
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.not-yet a {
+    color: var(--2, #000);
+    font-weight: 600;
+}
+
+.button-main.Verify-btn {
+    position: fixed;
+    bottom: 0;
+    width: calc(600px - 24px);
+    margin: 0 auto;
+    padding: 16px 0 20px;
+    background: #FFFFFF;
+    z-index: 100;
+}
+
+/*-----------------------[ 7.Personal Infp Screen CSS ]------------------------*/
+.per-info-text-head {
+    color: var(--2, #000);
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    padding-bottom: 24px;
+}
+
+.profile-pic {
+    max-height: 200px;
+    display: inline-block;
+    max-width: 200px;
+    height: auto;
+    width: 100%;
+}
+
+.camera-main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 120px;
+    margin: 0 auto;
+}
+
+.camera-img-main {
+    width: 40px;
+    height: 40px;
+    background: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    bottom: 22px;
+    cursor: pointer;
+}
+
+.circle-img-girl {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 24px;
+}
+
+.file-upload {
+    display: none;
+}
+
+.form-item {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-item input:focus+label,
+.form-item input:valid+label {
+    font-size: 14px;
+    top: 3px;
+    font-weight: 500;
+    color: #FE6601 !important;
+}
+
+.personal-info-form .form-item input {
+    font-size: 18px;
+    color: #000000;
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: #F5F5F5;
+    padding: 19px 16px;
+}
+
+.form-item .info-person {
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 33%;
+    left: 5px;
+    padding: 0 10px;
+    color: #555555;
+    transition: all .3s ease;
+    font-family: Jost;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+#ui-datepicker-div {
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin-top: 0.25rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.ui-datepicker-calendar thead th {
+    padding: 0.25rem 0;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #78909C;
+}
+
+.ui-datepicker-calendar tbody td {
+    width: 2.5rem;
+    text-align: center;
+    padding: 0;
+}
+
+div#ui-datepicker-div {
+    z-index: 500 !important;
+}
+
+.ui-datepicker-calendar tbody td a {
+    display: block;
+    border-radius: 0.25rem;
+    line-height: 2rem;
+    transition: 0.3s all;
+    color: #546E7A;
+    font-size: 0.975rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.ui-datepicker-calendar tbody td a:hover {
+    color: #FE6601;
+}
+
+.ui-datepicker-calendar tbody td a:hover {
+    background: rgba(254, 102, 1, 0.08);
+}
+
+.ui-datepicker-calendar tbody td a.ui-state-active {
+    background-color: #FE6601;
+    color: white;
+}
+
+.ui-datepicker-header a.ui-corner-all {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 2rem;
+    height: 0;
+    margin: 0.5rem;
+    border-radius: 0.25rem;
+    transition: 0.3s all;
+}
+
+span.ui-icon.ui-icon-circle-triangle-w,
+span.ui-icon.ui-icon-circle-triangle-e {
+    font-size: 15px;
+    color: #FE6601;
+    font-weight: 500;
+}
+
+a.ui-datepicker-next.ui-corner-all span.ui-icon.ui-icon-circle-triangle-e {
+    position: absolute;
+    right: -230px;
+}
+
+.ui-datepicker-title {
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.per-info-arrow-main {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 25px;
+}
+
+.per-info-arrow-main a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(254, 102, 1, 0.08);
+    border-radius: 12px;
+}
+
+.per-info-arrow-main-sec {
+    justify-content: start;
+}
+
+/* Style for toggle buttons */
+.personal-info-sec-one,
+.personal-info-sec-two {
+    display: none;
+}
+
+.personal-info-sec-one.active,
+.personal-info-sec-two.active {
+    display: block;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0;
+}
+
+.toggle-btn-per-info {
+    width: 36px;
+    height: 8px;
+    background-color: rgba(254, 102, 1, 0.09);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+.toggle-btn-per-info.active {
+    background-color: #FE6601;
+}
+
+/*-----------------------[ 8.Personal Information Loader Screen CSS ]------------------------*/
+.sk-fading-circle {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sk-fading-circle .sk-circle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.sk-fading-circle .sk-circle:before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    height: 15%;
+    background-color: #000;
+    border-radius: 100%;
+    -webkit-animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+    animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+}
+
+@keyframes sk-circleFadeDelay {
+
+    0%,
+    39%,
+    100% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sk-fading-circle .sk-circle2 {
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.sk-fading-circle .sk-circle3 {
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.sk-fading-circle .sk-circle4 {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.sk-fading-circle .sk-circle5 {
+    -webkit-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    transform: rotate(120deg);
+}
+
+.sk-fading-circle .sk-circle6 {
+    -webkit-transform: rotate(150deg);
+    -ms-transform: rotate(150deg);
+    transform: rotate(150deg);
+}
+
+.sk-fading-circle .sk-circle7 {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.sk-fading-circle .sk-circle8 {
+    -webkit-transform: rotate(210deg);
+    -ms-transform: rotate(210deg);
+    transform: rotate(210deg);
+}
+
+.sk-fading-circle .sk-circle9 {
+    -webkit-transform: rotate(240deg);
+    -ms-transform: rotate(240deg);
+    transform: rotate(240deg);
+}
+
+.sk-fading-circle .sk-circle10 {
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.sk-fading-circle .sk-circle11 {
+    -webkit-transform: rotate(300deg);
+    -ms-transform: rotate(300deg);
+    transform: rotate(300deg);
+}
+
+.sk-fading-circle .sk-circle12 {
+    -webkit-transform: rotate(330deg);
+    -ms-transform: rotate(330deg);
+    transform: rotate(330deg);
+}
+
+.sk-fading-circle .sk-circle2:before {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.sk-fading-circle .sk-circle3:before {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+}
+
+.sk-fading-circle .sk-circle4:before {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.sk-fading-circle .sk-circle5:before {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+.sk-fading-circle .sk-circle6:before {
+    -webkit-animation-delay: -0.7s;
+    animation-delay: -0.7s;
+}
+
+.sk-fading-circle .sk-circle7:before {
+    -webkit-animation-delay: -0.6s;
+    animation-delay: -0.6s;
+}
+
+.sk-fading-circle .sk-circle8:before {
+    -webkit-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+}
+
+.sk-fading-circle .sk-circle9:before {
+    -webkit-animation-delay: -0.4s;
+    animation-delay: -0.4s;
+}
+
+.sk-fading-circle .sk-circle10:before {
+    -webkit-animation-delay: -0.3s;
+    animation-delay: -0.3s;
+}
+
+.sk-fading-circle .sk-circle11:before {
+    -webkit-animation-delay: -0.2s;
+    animation-delay: -0.2s;
+}
+
+.sk-fading-circle .sk-circle12:before {
+    -webkit-animation-delay: -0.1s;
+    animation-delay: -0.1s;
+}
+
+.modal {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0.24) 100%);
+    backdrop-filter: blur(2px);
+    --bs-modal-bg: #FFF;
+}
+
+.modal-content {
+    border-radius: 24px;
+}
+
+.loader2 {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.finger-modal-content .modal-body {
+    padding: 24px 16px;
+}
+
+.finger-img-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.congratulations {
+    color: var(--2, #000);
+    font-family: "League Spartan";
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 15px 0;
+}
+
+.few-sec {
+    color: var(--3, #555);
+    font-family: Jost;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+/*-----------------------[ 9.Finger Print Screen CSS ]------------------------*/
+.scan-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 40vh);
+    flex-direction: column;
+    gap: 30px;
+}
+
+.scan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/finger-print-screen/FingerPrintBorder.png);
+    width: 220px;
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scan .fingerprint {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background: url(../images/finger-print-screen/fingerPrint.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scan .fingerprint::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/finger-print-screen/fingerPrint.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: animate 4s ease-in-out infinite;
+    filter: brightness(0) saturate(100%) invert(39%) sepia(92%) saturate(1292%) hue-rotate(359deg) brightness(99%) contrast(106%);
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        height: 0%;
+    }
+
+    50% {
+        height: 100%;
+    }
+}
+
+.scan .fingerprint::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #FE6601;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 20px #FE6601) drop-shadow(0 0 60px #FE6601);
+    animation: animate_line 4s ease-in-out infinite;
+}
+
+@keyframes animate_line {
+
+    0%,
+    100% {
+        top: 0%;
+    }
+
+    50% {
+        top: 100%;
+    }
+}
+
+.secure {
+    color: var(--3, #555);
+    text-align: center;
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 24px 0;
+}
+
+.do-later-btn {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.do-later-btn a {
+    color: var(--2, #000);
+    text-align: center;
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.finger-screen-btn {
+    position: fixed;
+    bottom: 0;
+    width: calc(600px - 24px);
+    margin: 0 auto;
+    padding: 16px 0 20px;
+    background: #FFFFFF;
+    z-index: 100;
+}
+
+/*-----------------------[ 10.Face Recognition Screen CSS ]------------------------*/
+.status__icon {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FE6601;
+    border-radius: 100%;
+    position: relative;
+}
+
+.status__icon img {
+    z-index: 1000;
+}
+
+.status__icon::after,
+.status__icon::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #989898;
+    border-radius: 100%;
+    z-index: -100;
+}
+
+.status__icon:after {
+    animation: pulse 3s linear infinite;
+}
+
+.status__icon:before {
+    animation: pulse 3s 1s linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-shadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(245, 245, 245, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 0 0 calc(2 * 3rem) rgba(255, 0, 60, 0);
+    }
+}
+
+/*-----------------------[ 11.Girl Face Recognition Screen CSS ]------------------------*/
+.face-landmarks {
+    background-image: url(../images/finger-print-screen/face-recong-girl.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.EnableFace {
+    position: absolute;
+    width: 100%;
+    padding: 24px 12px;
+    color: #000;
+}
+
+.Subtract {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.face-scanner-dot {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-40%, -100%);
+    width: 100%;
+    max-width: 120px;
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.loader-face-scan-main {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader-digit {
+    color: var(--4, #FE6601);
+    text-align: center;
+    font-family: Jost;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    padding-bottom: 16px;
+}
+
+.ver-face-text {
+    color: var(--2, #000);
+    text-align: center;
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    animation: blinker 1.5s linear infinite;
+}
+
+/*-----------------------[ 12. Preferred language Screen CSS ]------------------------*/
+.skip-header-btn {
+    color: var(--3, #555);
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.hey-jessica {
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 24px 0 16px 0;
+}
+
+.facilitate {
+    text-align: left;
+    padding: 0;
+}
+
+.select-lang-sec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 32px;
+}
+
+label.custom-radio-sel-lang {
+    padding: 11px 16px;
+    border: 2px solid #F5F5F5;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #000;
+    text-align: center;
+    font-family: Jost;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.lang-sec input[type="radio"] {
+    display: none;
+}
+
+.lang-sec input[type="radio"]:checked+label {
+    background: #000;
+    border-radius: 4px;
+    color: #FFF;
+    border: 2px solid transparent;
+}
+
+/*-----------------------[ 13. Choose Interests Screen CSS ]------------------------*/
+.intere {
+    padding-top: 24px;
+}
+
+.lang-sec input[type="checkbox"] {
+    display: none;
+}
+
+.lang-sec input[type="checkbox"]:checked+label {
+    background: #000000;
+    border-radius: 4px;
+    color: #FFF;
+    border: 2px solid transparent;
+}
+
+.account-created-text {
+    text-align: center;
+    padding-top: 0;
+}
+
+.img6 {
+    padding-top: 30px;
+}
+
+/*-----------------------[ 14.Forget Password Screen CSS ]------------------------*/
+.mobile-message-main {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(254, 102, 1, 0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#forget-password .form-item {
+    position: relative;
+    margin-top: 24px;
+}
+
+#forget-password .form-item input:focus+label,
+#forget-password .form-item input:valid+label {
+    font-size: 14px;
+    top: 3px;
+    font-weight: 500;
+    color: #FE6601 !important;
+}
+
+#forget-password .form-item input:focus {
+    border: 2px solid #FE6601;
+}
+
+#forget-password .form-item input {
+    font-size: 18px;
+    color: #000000;
+    background: transparent;
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+    padding: 16px 16px 16px 75px;
+    border: 2px solid var(--9, #F5F5F5);
+    height: 80px;
+}
+
+#forget-password .info-person {
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 33%;
+    left: 65px;
+    padding: 0 10px;
+    color: #555555;
+    transition: all .3s ease;
+    font-family: Jost;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+/*-----------------------[ 15.Confirm OTP Screen CSS ]------------------------*/
+.block-footer {
+    color: var(--3, #555);
+    font-family: Jost;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 24px;
+    padding-bottom: 32px;
+}
+
+#countdowntimer {
+    font-weight: 700;
+    color: #000;
+}
+
+#countdowntimer::after {
+    content: ' Sec';
+}
+
+/*-----------------------[ 16.New Password Screen CSS ]------------------------*/
+#New-password .form-item {
+    position: relative;
+    margin-top: 24px;
+}
+
+#New-password .form-item input:focus+label,
+#New-password .form-item input:valid+label {
+    font-size: 14px;
+    top: 3px;
+    font-weight: 500;
+    color: #FE6601 !important;
+}
+
+#New-password .form-item input {
+    font-size: 18px;
+    color: #000000;
+    background: #F5F5F5;
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+    padding: 20px 16px;
+    border: 2px solid var(--9, #F5F5F5);
+    height: 64px;
+}
+
+#New-password .form-item .eye-off {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#New-password .info-person {
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 33%;
+    left: 10px;
+    padding: 0 10px;
+    color: #555555;
+    transition: all .3s ease;
+    font-family: Jost;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+/*-----------------------[ 17.Home Screen Setting CSS ]------------------------*/
+.offcanvas-header {
+    border-bottom: 2px solid #F5F5F5;
+}
+
+.home-setting-icons-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 2px solid #F5F5F5;
+}
+
+.setting-opestion-main {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.setting-icons-main {
+    width: 48px;
+    height: 48px;
+    background: rgba(254, 102, 1, 0.08);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-notification {
+    color: var(--2, #000);
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.setting-arrow {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(288deg) brightness(98%) contrast(102%);
+}
+
+.btn-close {
+    --bs-btn-close-focus-shadow: none;
+    --bs-btn-close-opacity: 1;
+}
+
+.offcanvas-title {
+    color: var(--2, #000);
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+/*-----------------------[ 18.Home Screen One CSS ]------------------------*/
+.shop-ad-card {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 16px;
+    border-radius: 16px;
+    margin: 0px 8px 0 8px;
+}
+
+.shop-ad-card-img1 {
+    background-image: url('../images/home-screen/cap-man-img1.jpg');
+}
+
+.shop-ad-card-img2 {
+    background-image: url('../images/home-screen/cap-man-img2.jpg');
+}
+
+.shop-ad-card-img3 {
+    background-image: url('../images/home-screen/cap-man-img3.jpg');
+}
+
+.shop-ad-card-img4 {
+    background-image: url('../images/home-screen/cap-man-img4.jpg');
+}
+
+.season {
+    color: var(--1, #FFF);
+    font-family: "League Spartan";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    padding-bottom: 8px;
+    max-width: 220px;
+}
+
+.disc {
+    color: var(--1, #FFF);
+    font-family: Jost;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.ShopNowBtn a {
+    margin-top: 32px;
+    display: inline-block;
+}
+
+.shop-card {
+    position: relative;
+}
+
+.shop-card ul.slick-dots {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+}
+
+.shop-card ul.slick-dots button {
+    font-size: 0;
+    color: #000;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #FFF;
+}
+
+.shop-card li.slick-active button {
+    width: 24px;
+    height: 8px;
+    background-color: #FFF;
+    border-radius: 15px;
+    border: none;
+}
+
+.search-bar-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px 12px;
+    border-radius: 8px;
+    background: var(--9, #F5F5F5);
+    margin: 24px 0;
+}
+
+.search-bar-main input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: var(--9, #F5F5F5);
+    color: var(--3, #555);
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* ------------- Categories -------------*/
+.categories-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 24px 0 16px 0;
+}
+
+.categories {
+    color: var(--2, #000);
+    font-family: "League Spartan";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.view-all-arrow {
+    filter: brightness(0) saturate(100%) invert(32%) sepia(0%) saturate(1503%) hue-rotate(153deg) brightness(99%) contrast(92%);
+}
+
+.view-all-text {
+    color: var(--3, #555);
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.categories-slider {
+    margin-left: 12px;
+}
+
+.categories-slider-head {
+    margin: 0 8px 12px 8px;
+    text-align: center;
+}
+
+.categories-img-oval {
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    width: 100%;
+    max-width: 100px;
+    margin-bottom: 12px;
+}
+
+.categories-img-oval img {
+    position: relative;
+    bottom: -3px;
+}
+
+.categories-img1 {
+    background: #A9EFFF;
+}
+
+.categories-img2 {
+    background: #FFBF9B;
+}
+
+.categories-img3 {
+    background: #FFB9BC;
+}
+
+.categories-img4 {
+    background: #FFD885;
+}
+
+.categories-img5 {
+    background: #BAB9FF;
+}
+
+.categories-img6 {
+    background: #CDFF9B;
+}
+
+.categories-img7 {
+    background: #CBC6CA;
+}
+
+.categories-name {
+    color: var(--2, #000);
+    text-align: center;
+    font-family: "League Spartan";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.categories-items {
+    color: var(--3, #555);
+    text-align: center;
+    font-family: Jost;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+/* ------------- Featured -------------*/
+.featured-slider-head {
+    margin: 0 8px 0 8px;
+}
+
+.featured-img-box {
+    height: 160px;
+    border-radius: 8px;
+    background: var(--9, #F5F5F5);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.featured-img-box img {
+    mix-blend-mode: darken;
+    max-width: 100%;
+}
+
+.like-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #FFF;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.heart-icon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    fill: none;
+    stroke: #555555;
+    stroke-width: 3;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.heart-icon.filled {
+    fill: red;
+    stroke: red;
+}
+
+.featured-prod-name {
+    color: var(--2, #000);
+    font-family: Jost;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.featured-prod-price {
+    color: var(--2, #000);
+    font-family: Jost;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.featured-prod-dmain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.featured-prod-rating {
+    color: var(--3, #555);
+    font-family: Jost;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    align-items: stretch;
+    gap: 2px;
+}
+
+.featured-prod-rating::before {
+    content: url('../images/svg/star-orng.svg');
+}
+
+/* ------------- shop-ad-card2 -------------*/
+.shop-ad-card2 {
+    margin: 24px 0 0 0;
+    border-radius: 0;
+    padding: 32px 16px;
+}
+
+#shop-ad-card-second ul.slick-dots {
+    position: absolute;
+    right: 25px;
+    bottom: 33px;
+}
+
+/* ------------- Logo Brand -------------*/
+.brand-slider .featured-img-box {
+    width: 100%;
+    max-width: 120px;
+    height: 64px;
+    margin-bottom: 0;
+    padding: 12px;
+}
+
+.brand-slider {
+    margin-left: 12px;
+}
+
+.brand-slider.featured-slider-head {
+    margin: 0 8px 12px 8px;
+}
+
+/* ------------- Best Sellers -------------*/
+.best-sellers-slider {
+    margin-left: 12px;
+    margin-bottom: 24px;
+}
+
+.best-sellers-slider .featured-img-box {
+    max-width: 200px;
+    height: 220px;
+}
+
+.pluse-sign-box {
+    width: 48px;
+    height: 48px;
+    background: #000;
+    border-radius: 8px 0 8px 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pluse-sign-box img {
+    mix-blend-mode: normal;
+}
+
+.sale-stamp {
+    color: var(--1, #FFF);
+    text-align: center;
+    font-family: Jost;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    padding: 8px;
+    border-radius: 4px;
+    background: #FF373C;
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+}
+
+.Shor {
+    color: var(--2, #000);
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.featured-prod-price span {
+    color: var(--3, #555);
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration-line: line-through;
+    padding-left: 8px;
+}
+
+/* ------------- New Arrivals -------------*/
+.tab-btn-main {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 16px;
+    overflow: auto;
+    margin-left: 12px;
+}
+
+.tab-btn-main::-webkit-scrollbar {
+    display: none;
+}
+
+
+.tabContainer {
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.tab-btn {
+    color: var(--2, #000);
+    text-align: center;
+    font-family: Jost;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    border-radius: 12px;
+    border: 2px solid #000;
+    padding: 7px 12px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.new-arrivals {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.Tabcondent {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+}
+
+.tab-btn.tab-active,
+.tab-btn:hover {
+    background: #000;
+    color: #FFF;
+}
+
+.Tabcondent.tab-active {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    border-radius: 0px;
+    transition: all ease-in-out 0.6s;
+    margin: 0 auto;
+    position: relative;
+}
+
+.new-arrivals .featured-img-box {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    cursor: auto;
+}
+
+.pluse-sign-box-arrivals {
+    width: 32px;
+    height: 32px;
+}
+
+.like-btn-new-arrivals {
+    width: 26px;
+    height: 26px;
+    top: 4px;
+    right: 4px;
+}
+
+.like-btn-new-arrivals .heart-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.Shor-arrivals {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 1100px;
+}
+
+.featured-prod-price-arrivals {
+    padding: 12px 0;
+}
+
+/* Home Scrren Footer */
+.bottom-menu-svg-main {
+    position: relative;
+}
+
+.bottom-menu-svg {
+    position: fixed;
+    bottom: -40px;
+    z-index: 100;
+}
+
+.gol3 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background-color: #000000;
+    border-radius: 50%;
+    z-index: 1001;
+    bottom: 100px;
+}
+
+.add-to-cart-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.home-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-menu-svg-design {
+    max-width: 600px;
+    height: 160px;
+    width: 100%;
+    background: #FFF;
+}
+
+.navigation {
+    position: fixed;
+    bottom: 25px;
+    z-index: 100;
+    width: 100%;
+    padding: 0 32px;
+    max-width: 600px;
+}
+
+.navigation .listWrap {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navigation .listWrap li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation .listWrap li:active a .icon,
+.navigation .listWrap li.active a .icon {
+    filter: brightness(0) saturate(100%) invert(39%) sepia(93%) saturate(1634%) hue-rotate(1deg) brightness(100%) contrast(101%);
+    transform: translateY(-20px);
+}
+
+.navigation .listWrap li a .icon {
+    position: relative;
+    display: block;
+    text-align: center;
+    transition: 0.5s;
+    color: #FFF;
+}
+
+.navigation .listWrap li:active a .text,
+.navigation .listWrap li.active a .text {
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.navigation .listWrap li a .text {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FE6601;
+    transition: 0.5s;
+    transform: translateY(20px);
+    opacity: 0;
+    z-index: 1;
+}
+
+/*-----------------------[ 19.Home Screen Two CSS ]------------------------*/
+.home-screen2ShopCard .shop-ad-card {
+    margin: 0;
+    border-radius: 0 0 32px 32px;
+    padding: 150px 16px 24px;
+}
+
+.shop-ad-card-page2img1 {
+    background-image: url('../images/home-screen/home2Slider-img1.jpg');
+}
+
+.shop-ad-card-page2img2 {
+    background-image: url('../images/home-screen/home2Slider-img2.jpg');
+}
+
+.shop-ad-card-page2img3 {
+    background-image: url('../images/home-screen/home2Slider-img3.jpg');
+}
+
+.shop-ad-card-page2img4 {
+    background-image: url('../images/home-screen/home2Slider-img4.jpg');
+}
+
+/* Top Categories */
+.mind-items {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.item-name-box {
+    width: 74px;
+    height: 102px;
+    border-radius: 37px 37px 4px 4px;
+    border: 2px solid #F5F5F5;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.16);
+}
+
+.item-name-box-sub {
+    width: 64px;
+    height: 64px;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px 4px 8px 3px;
+}
+
+.item-name-box-name {
+    color: var(--2, #000);
+    text-align: center;
+    font-family: Jost;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+}
+
+.shop-ad-card-img5 {
+    background-image: url('../images/home-screen/cap-man-img5.jpg');
+}
+
+/*-----------------------[ 20.Search Screen CSS ]------------------------*/
+.Tabcondent-search-screen .Tabcondent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.Tabcondent-search-screen .new-arrivals {
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.Tabcondent-search-screen .new-arrivals .featured-img-box{
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.Tabcondent-search-screen .rating-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
